@@ -5,10 +5,14 @@ def collatz(number):
         return number //2
     else:
         return number * 3 +1
-
+    
 print("Enter your number: ")
 num = input()
-while(num != 1):
-    num = collatz(num)
-    print(num)
+#INPUT VALIDATION
+try:
+    while(num != 1):
+        num = collatz(num)
+        print(num)
+except ValueError:
+    print("PLease enter a number")
 
