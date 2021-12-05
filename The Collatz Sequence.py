@@ -1,4 +1,4 @@
-# Write your code here
+# COLLATZ SEQUENCE
 def collatz(number):
     number = int(number)
     if number % 2 == 0:
